@@ -2,6 +2,7 @@
 
 {% block body %}
     <div class="container">
+        <h2 class="mb-3 mt-3">İşin minimum süreceği hatfta : {{ durationTheWork(users) }}</h2>
         <table class="table table-striped">
             {% for user in users %}
                 <thead class="thead-dark">

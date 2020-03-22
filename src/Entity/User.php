@@ -11,6 +11,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class User
 {
+    const WEEKLY_WORKING_TIME = 45;
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
