@@ -1,4 +1,27 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    <div class="container">
+        <table class="table table-striped">
+            {% for user in users %}
+                <thead class="thead-dark">
+                <tr>
+                    <th colspan="4">{{ user.name }}</th>
+                </tr>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Zorluk</th>
+                    <th>Süre</th>
+                </tr>
+                </thead>
+                {% for task in user.tasks %}
+                    <tr>
+                        <td> {{ task.name }} </td>
+                        <td>{{ task.difficulty }}x</td>
+                        <td>{{ task.duration }}</td>
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+        </table>
+    </div>
 {% endblock %}

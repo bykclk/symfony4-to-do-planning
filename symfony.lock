@@ -200,6 +200,9 @@
     "sebastian/version": {
         "version": "2.0.1"
     },
+    "symfony/asset": {
+        "version": "v4.4.5"
+    },
     "symfony/cache": {
         "version": "v4.4.5"
     },
@@ -362,6 +365,25 @@
     },
     "symfony/var-exporter": {
         "version": "v4.4.5"
+    },
+    "symfony/webpack-encore-bundle": {
+        "version": "1.6",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.6",
+            "ref": "69e1d805ad95964088bd510c05995e87dc391564"
+        },
+        "files": [
+            "assets/css/app.css",
+            "assets/js/app.js",
+            "config/packages/assets.yaml",
+            "config/packages/prod/webpack_encore.yaml",
+            "config/packages/test/webpack_encore.yaml",
+            "config/packages/webpack_encore.yaml",
+            "package.json",
+            "webpack.config.js"
+        ]
     },
     "symfony/yaml": {
         "version": "v4.4.5"
